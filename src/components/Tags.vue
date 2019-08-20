@@ -4,20 +4,20 @@
         <span>类型</span>
         <el-divider direction="vertical"></el-divider>
             <el-row  class="button_style">
-              <el-button :value="radio3" autofocus="true" v-for="genre in genres" :key="genre.id" v-on:click="getData(genre)" round plain type="text" size="mini" >{{genre}}</el-button>
+              <el-button :value="radio3" :autofocus="true" v-for="genre in genres" :key="genre.id" v-on:click="getData(genre)" round plain type="text" size="mini" >{{genre}}</el-button>
             </el-row>
         
         <el-divider></el-divider>
         <span>区域</span>
         <el-divider  direction="vertical"></el-divider>
               <el-row  class="button_style">
-                <el-button v-model="radio2" autofocus="true" v-for="country in countries" :key="country.id" v-on:click="getData(country)" round plain type="text" size="mini" >{{country}}</el-button> 
+                <el-button :v-model="radio2" :autofocus="true" v-for="country in countries" :key="country.id" v-on:click="getData(country)" round plain type="text" size="mini" >{{country}}</el-button> 
             </el-row>
         <el-divider></el-divider>
         <span>年份</span>
         <el-divider direction="vertical"></el-divider>
               <el-row  class="button_style">
-              <el-button v-model="radio2" autofocus="true" v-for="year in year_range" :key="year.id" v-on:click="getData(year)" round plain type="text" size="mini" >{{year}}</el-button> 
+              <el-button :v-model="radio1" :autofocus="true" v-for="year in year_range" :key="year.id" v-on:click="getData(year)" round plain type="text" size="mini" >{{year}}</el-button> 
               </el-row>
         </el-card>
     </div>
